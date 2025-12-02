@@ -1,11 +1,54 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36212.18 d17.14
+VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CDD1C1D0-B4C1-4321-B803-CB6648B00CFB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Backend", "Backend", "{1FA447B2-1546-4EC9-B448-F0901C05BC5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.API", "src\Backend\GeradorResumo.API\GeradorResumo.API.csproj", "{9EDBA5BE-5534-448C-BC91-85F543EF10D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Domain", "src\Backend\GeradorResumo.Domain\GeradorResumo.Domain.csproj", "{6851E4D5-D17E-4610-A80A-E788137F8342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Application", "src\Backend\GeradorResumo.Application\GeradorResumo.Application.csproj", "{AEED3A6B-6747-48E5-85AB-BA63E250A910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Infrastructure", "src\Backend\GeradorResumo.Infrastructure\GeradorResumo.Infrastructure.csproj", "{4C1B2862-8588-45C6-A90D-7BF8619B152F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9EDBA5BE-5534-448C-BC91-85F543EF10D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EDBA5BE-5534-448C-BC91-85F543EF10D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EDBA5BE-5534-448C-BC91-85F543EF10D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EDBA5BE-5534-448C-BC91-85F543EF10D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6851E4D5-D17E-4610-A80A-E788137F8342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6851E4D5-D17E-4610-A80A-E788137F8342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6851E4D5-D17E-4610-A80A-E788137F8342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6851E4D5-D17E-4610-A80A-E788137F8342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEED3A6B-6747-48E5-85AB-BA63E250A910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEED3A6B-6747-48E5-85AB-BA63E250A910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEED3A6B-6747-48E5-85AB-BA63E250A910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEED3A6B-6747-48E5-85AB-BA63E250A910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FA447B2-1546-4EC9-B448-F0901C05BC5C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9EDBA5BE-5534-448C-BC91-85F543EF10D7} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
+		{6851E4D5-D17E-4610-A80A-E788137F8342} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
+		{AEED3A6B-6747-48E5-85AB-BA63E250A910} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
+		{4C1B2862-8588-45C6-A90D-7BF8619B152F} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F7995C4-5A89-42B8-A31D-E2F28E32A4EE}
