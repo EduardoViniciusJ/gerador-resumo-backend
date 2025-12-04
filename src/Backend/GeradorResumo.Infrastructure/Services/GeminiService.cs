@@ -6,7 +6,7 @@ using static Google.Apis.Requests.BatchRequest;
 
 namespace GeradorResumo.Infrastructure.Services
 {
-    public class GeminiService : ISumarryIA
+    public class GeminiService : ISummaryIA
     {
         private readonly Client _client;
         private readonly string _model;
@@ -17,7 +17,7 @@ namespace GeradorResumo.Infrastructure.Services
             _model = config["GoogleGenAI:Model"]!;
         }
 
-        public async Task<string> SumarryAsync(string text)
+        public async Task<string> SummaryAsync(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
                 return "Por favor, escreva um texto maior para que eu possa gerar um resumo.";

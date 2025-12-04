@@ -28,7 +28,7 @@ namespace GeradorResumo.Infrastructure
 
         public static void AddSummaryIA(IServiceCollection service)
         {
-            service.AddScoped<ISumarryIA, GeminiService>();
+            service.AddScoped<ISummaryIA, GeminiService>();
         }
     }
 }
