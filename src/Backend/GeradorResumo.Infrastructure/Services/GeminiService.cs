@@ -19,14 +19,6 @@ namespace GeradorResumo.Infrastructure.Services
 
         public async Task<string> SummaryAsync(string text)
         {
-            if (string.IsNullOrWhiteSpace(text))
-                return "Por favor, escreva um texto maior para que eu possa gerar um resumo.";
-
-            if (text.Length > 20000)
-            {   
-                return "Texto muito grande para gerar resumo.";
-            }
-
 
             var response = await _client.Models.GenerateContentAsync(
                 model: _model,
