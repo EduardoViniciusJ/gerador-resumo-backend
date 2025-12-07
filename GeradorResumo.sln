@@ -20,10 +20,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Infrastructure", "src\Backend\GeradorResumo.Infrastructure\GeradorResumo.Infrastructure.csproj", "{4C1B2862-8588-45C6-A90D-7BF8619B152F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{BF968007-D6C8-4B61-B8D3-14333C1A780B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeradorResumo.Web", "src\Frontend\GeradorResumo.Web\GeradorResumo.Web.csproj", "{752D598C-A700-4C8A-8F9D-4784F070C95F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,10 +42,6 @@ Global
 		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C1B2862-8588-45C6-A90D-7BF8619B152F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{752D598C-A700-4C8A-8F9D-4784F070C95F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{752D598C-A700-4C8A-8F9D-4784F070C95F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{752D598C-A700-4C8A-8F9D-4784F070C95F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{752D598C-A700-4C8A-8F9D-4784F070C95F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,8 +52,6 @@ Global
 		{6851E4D5-D17E-4610-A80A-E788137F8342} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
 		{AEED3A6B-6747-48E5-85AB-BA63E250A910} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
 		{4C1B2862-8588-45C6-A90D-7BF8619B152F} = {1FA447B2-1546-4EC9-B448-F0901C05BC5C}
-		{BF968007-D6C8-4B61-B8D3-14333C1A780B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{752D598C-A700-4C8A-8F9D-4784F070C95F} = {BF968007-D6C8-4B61-B8D3-14333C1A780B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F7995C4-5A89-42B8-A31D-E2F28E32A4EE}
