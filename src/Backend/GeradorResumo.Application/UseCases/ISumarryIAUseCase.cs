@@ -1,8 +1,10 @@
-﻿namespace GeradorResumo.Application.UseCases
+﻿using GeradorResumo.Application.DTOs;
+
+namespace GeradorResumo.Application.UseCases
 {
     public interface ISumarryIAUseCase 
     {
 
-        Task<string> Execute(string text);
+        Task<SummaryResponse> Execute(string text);
     }
 }

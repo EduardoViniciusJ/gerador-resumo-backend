@@ -1,4 +1,5 @@
-﻿using GeradorResumo.Application.Execeptions;
+﻿using GeradorResumo.Application.DTOs;
+using GeradorResumo.Application.Execeptions;
 using GeradorResumo.Domain.Services;
 
 namespace GeradorResumo.Application.UseCases
@@ -13,13 +14,16 @@ namespace GeradorResumo.Application.UseCases
             _summaryIA = summaryIA;
         }
 
-        public async Task<string> Execute(string text)
+        public async Task<SummaryResponse> Execute(string text)
         {
             ValidateUseCase(text);
 
             var response = await _summaryIA.SummaryAsync(text);
 
-            return response;
+            return new SummaryResponse
+            {
+                text = response
+            };
         }
 
 
@@ -30,7 +34,7 @@ namespace GeradorResumo.Application.UseCases
                 throw new GeradorResumoException("Por favor, escreva um texto maior para que eu possa gerar um resumo.");
             }
 
-            if(text.Length > 1)
+            if (text.Length > 20000)
             {
                 throw new GeradorResumoException("Texto muito grande para gerar resumo.");
             }
