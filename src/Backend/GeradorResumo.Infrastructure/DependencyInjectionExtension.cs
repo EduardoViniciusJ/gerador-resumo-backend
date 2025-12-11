@@ -17,7 +17,7 @@ namespace GeradorResumo.Infrastructure
 
         public static void AddGoogleGenAI(IServiceCollection service, IConfiguration configuration)
         {
-            var settings = configuration["GoogleGenAI:ApiKey"];
+            var settings = configuration["GoogleGenAI:ApiKey"] ?? Environment.GetEnvironmentVariable("GoogleGenAI:ApiKey");
 
             if(string.IsNullOrWhiteSpace(settings)) {
                 throw new Exception("Falta a chave da API.");
